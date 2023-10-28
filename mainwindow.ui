@@ -17,7 +17,7 @@
    <widget class="QPushButton" name="addParametersButton">
     <property name="geometry">
      <rect>
-      <x>570</x>
+      <x>470</x>
       <y>150</y>
       <width>141</width>
       <height>24</height>
@@ -53,6 +53,19 @@
       <width>681</width>
       <height>361</height>
      </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="removeParametersButton">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>150</y>
+      <width>121</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Remover parâmetros</string>
     </property>
    </widget>
   </widget>

@@ -24,6 +24,10 @@ private slots:
 
     void on_parameterDialog_Accepted(double a3, double a2, double x0, double lambda, double precision);
 
+    void on_removeParametersButton_clicked();
+
+    void on_cell_clicked(int row, int column);
+
 private:
     Ui::MainWindow *ui;
     void init();

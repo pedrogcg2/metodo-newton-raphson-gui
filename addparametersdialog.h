@@ -15,11 +15,6 @@ public:
     explicit AddParametersDialog(QWidget *parent = nullptr);
     ~AddParametersDialog();
 
-    double getLambda();
-    double getPrecision();
-    double getA3();
-    double getA2();
-
 private slots:
     void on_buttonBox_accepted();
 
@@ -31,12 +26,8 @@ signals:
 private:
     Ui::AddParametersDialog *ui;
 
-    double m_lambda;
-    double m_precision;
-    double m_a3;
-    double m_a2;
-
     void init();
+    void sendWarning();
 };
 
 #endif // ADDPARAMETERSDIALOG_H
