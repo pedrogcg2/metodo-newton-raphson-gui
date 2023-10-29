@@ -26,6 +26,8 @@ void MainWindow::init()
         ui->resultTable->setColumnWidth(i,ui->resultTable->width()/3);
 
     connect(ui->resultTable, &QTableWidget::cellClicked, this, &MainWindow::on_cell_clicked);
+
+    this->setFixedSize(this->size());
 }
 
 void MainWindow::insertOnTable(QList<QString> insertList)
