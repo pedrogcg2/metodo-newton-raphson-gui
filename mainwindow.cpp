@@ -25,9 +25,7 @@ void MainWindow::init()
     for(int i = 0; i < 3; i++)
         ui->resultTable->setColumnWidth(i,ui->resultTable->width()/3);
 
-    connect(ui->resultTable, &QTableWidget::cellDoubleClicked, this, &MainWindow::on_cell_clicked);
-
-
+    connect(ui->resultTable, &QTableWidget::cellClicked, this, &MainWindow::on_cell_clicked);
 }
 
 void MainWindow::insertOnTable(QList<QString> insertList)
